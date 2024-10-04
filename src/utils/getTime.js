@@ -45,12 +45,9 @@ export const getTimeCapsule = () => {
     // 计算总的天数或小时数
     const total = end.diff(start, unit === "day" ? "hour" : "day") + 1;
     // 计算已经过去的天数或小时数
-    let passed;
-    if (unit === "week" && now.day() === 0) {
-      // 如果是星期日
-      passed = total - 1;
-    } else {
-      passed = now.diff(start, unit === "day" ? "hour" : "day");
+    let passed = now.diff(start, unit === "day" ? "hour" : "day");
+    if (unit === "week") {
+      passed = (passed + 6) % 7;
     }
     const remaining = total - passed;
     const percentage = (passed / total) * 100;
@@ -127,19 +124,21 @@ export const checkDays = () => {
 // 建站日期统计
 export const siteDateStatistics = (startDate) => {
   const currentDate = new Date();
-  const differenceInTime = currentDate.getTime() - startDate.getTime();
-  const differenceInDays = differenceInTime / (1000 * 3600 * 24);
-  const differenceInMonths = differenceInDays / 30;
-  const differenceInYears = differenceInMonths / 12;
-  if (differenceInYears >= 1) {
-    return `本站已经苟活了 ${Math.floor(differenceInYears)} 年 ${Math.floor(
-      differenceInMonths % 12,
-    )} 月 ${Math.round(differenceInDays % 30)} 天`;
-  } else if (differenceInMonths >= 1) {
-    return `本站已经苟活了 ${Math.floor(differenceInMonths)} 月 ${Math.round(
-      differenceInDays % 30,
-    )} 天`;
-  } else {
-    return `本站已经苟活了 ${Math.round(differenceInDays)} 天`;
+  let years = currentDate.getFullYear() - startDate.getFullYear();
+  let months = currentDate.getMonth() - startDate.getMonth();
+  let days = currentDate.getDate() - startDate.getDate();
+
+  // 如果天数或月份为负数，则调整天数和月份
+  if (days < 0) {
+    months--;
+    const lastMonth = new Date(currentDate.getFullYear(), currentDate.getMonth() - 1, 0);
+    days += lastMonth.getDate();
   }
+
+  if (months < 0) {
+    years--;
+    months += 12;
+  }
+
+  return `本站已经苟活了 ${years} 年 ${months} 月 ${days} 天`;
 };
