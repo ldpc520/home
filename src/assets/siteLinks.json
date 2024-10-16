@@ -34,4 +34,9 @@
     "name": "恩山论坛",
     "link": "https://www.right.com.cn/forum/forum.php"
   }
+  {
+    "icon": "LaptopCode",
+    "name": "宝塔",
+    "link": "https://192.168.31.11:8880/ldpc520"
+  }
 ]
