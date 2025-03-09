@@ -16,7 +16,7 @@
   },
   {
     "icon": "Compass",
-    "name": "NAS导航",
+    "name": "Sun_Panel",
     "link": "http://frphn2.chickfrp.com:10283"
   },
   {
@@ -32,6 +32,6 @@
   {
     "icon": "LaptopCode",
     "name": "宝塔",
-    "link": "https://192.168.31.11:8880/ldpc520"
+    "link": "http://frphn2.chickfrp.com:10279/ldpc520"
   }
 ]
