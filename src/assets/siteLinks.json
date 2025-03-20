@@ -7,7 +7,7 @@
   {
     "icon": "Cloud",
     "name": "Alist",
-    "link": "http://118.31.14.103:20031"
+    "link": "http://frphn1.chickfrp.com:10260"
   },
   {
     "icon": "CompactDisc",
@@ -17,7 +17,7 @@
   {
     "icon": "Compass",
     "name": "Sun_Panel",
-    "link": "http://118.31.14.103:17120"
+    "link": "http://frphn1.chickfrp.com:10261"
   },
   {
     "icon": "Book",
@@ -32,6 +32,6 @@
   {
     "icon": "LaptopCode",
     "name": "宝塔",
-    "link": "http://118.31.14.103:25248/btpanel"
+    "link": "http://frphn1.chickfrp.com:10264/btpanel"
   }
 ]
