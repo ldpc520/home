@@ -1,8 +1,8 @@
 [
   {
     "icon": "Blog",
-    "name": "博客",
-    "link": "https://bk.sdyun.eu.org"
+    "name": "微博",
+    "link": "https://weibo.com"
   },
   {
     "icon": "Cloud",
@@ -31,7 +31,7 @@
   },
   {
     "icon": "LaptopCode",
-    "name": "宝塔",
-    "link": "http://frphn1.chickfrp.com:10264/btpanel"
+    "name": "腾讯元宝",
+    "link": "https://yuanbao.tencent.com/"
   }
 ]
