@@ -1,7 +1,7 @@
 [
   {
     "icon": "Blog",
-    "name": "微博",
+    "name": "博客",
     "link": "https://bk.sdyun.eu.org"
   },
   {
@@ -16,13 +16,13 @@
   },
   {
     "icon": "Compass",
-    "name": "Sun_Panel",
+    "name": "NAS导航",
     "link": "http://116.205.228.147:9002"
   },
   {
     "icon": "Book",
     "name": "网站导航",
-    "link": "https://dh.sdjy.eu.org"
+    "link": "http://hm.527200.xyz"
   },
   {
     "icon": "Fire",
